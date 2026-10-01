@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 0;
+}
+
+.page1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box1 {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    position: fixed;
+    margin-left: -1050px;
+    margin-top: -220px;
+    animation: updown 8s ease-in-out infinite;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    position: fixed;
+    margin-left: 650px;
+    margin-top: -350px;
+
+    animation: tiltupdown 4s ease-in-out infinite;
+}
+
+@keyframes tiltupdown {
+    0% {
+        transform: translateY(0) rotate(25deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(25deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(25deg);
+    }
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    position: fixed;
+    margin-left: 1050px;
+    margin-top: 320px;
+    animation: updown 8s ease-out infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.page1 h1 {
+    font-size: 180px;
+    font-weight: bolder;
+    position: fixed;
+
+}
+
+.highlight {
+    background-color: rgb(189, 252, 95);
+    padding: 10px 20px;
+    position: fixed;
+    margin-top: -250px;
+
+
+}
+
+.page1 p {
+    font-weight: lighter;
+    text-align: center;
+    position: fixed;
+    margin-top: 250px;
+
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+
+}
+
+.page2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page2 div {
+    position: absolute;
+    color: white;
+    padding: 30px 60px;
+}
+
+.page2 h2 {
+    font-size: 50px;
+}
+
+.page2 p {
+    color: rgb(195, 241, 126);
+    font-size: 20px;
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.nav h2 {
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+.system {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.four {
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    transition: width 1s;
+}
+
+.four h2 {
+    transform: rotate(-90deg);
+}
+
+.content {
+    display: none;
+}
+
+.four:hover {
+    width: 60%;
+}
+
+.four:hover h2 {
+    display: none;
+}
+
+.four:hover .content {
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+
+.A1:hover {
+    background-image: url("./images/nexus-core.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.A2:hover {
+    background-image: url("./images/nexus-flux.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.A3:hover {
+    background-image: url("./images/nexus-grid.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.A4:hover {
+    background-image: url("./images/nexus-sync.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+
+
+
+.page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(103, 72, 50);
+    position: absolute;
+}
+
+
+    
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.features {
+    width: 80%;
+    height: auto;
+}
+
+.features > div {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.right {
+    background-color: aliceblue;
+}
